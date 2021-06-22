@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "首页",
+    "usingComponents": {
+        "van-icon": "/miniprogram_npm/@vant/weapp/icon/index"
+    }
+}

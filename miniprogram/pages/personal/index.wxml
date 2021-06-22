@@ -1,0 +1,47 @@
+<view class="container">
+    <view class="user-info">
+        <view class="user" wx:if="{{hasUserInfo}}">
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+        <view class="no-user" wx:else hover-class="none" hover-stop-propagation="false">
+            <view class="no-avatar" hover-class="none" hover-stop-propagation="false">
+                头像
+            </view>
+            <button class="mini-btn" type="primary" bindtap="getUserProfile" size="mini">登录</button>
+        </view>
+       
+    </view>
+    
+    <view class="view-cell">
+        <van-cell class="van-cell-item" center title="卡券商城" size="large" value="前往购买" icon="location-o" is-link />
+    </view>
+    <view class="view-cell">
+        <van-cell class="van-cell-item" center title="我的卡券" size="large" value="3张" icon="location-o" is-link />
+    </view>
+    <view class="view-cell">
+        <van-cell class="van-cell-item" center title="钱包余额（￥25.5元）" size="large" value="充值" icon="location-o" is-link />
+    </view>
+    <view class="view-cell">
+        <van-cell class="van-cell-item" center title="常见问题" value="查看" size="large" icon="location-o" is-link />
+    </view>
+    <view class="view-cell">
+        <van-cell class="van-cell-item" center title="联系商家" value="拨打电话" size="large" icon="location-o" is-link />
+    </view>
+     <view class="view-cell">
+         <view class="study-record">
+             <view class="study-room">
+                 <view class="title">
+                     我的学习记录
+                 </view>
+                 <view class="record-item" wx:for="{{studyList}}">
+                     {{item.des}}
+                 </view>
+             </view>
+             <view class="stydu-option">
+                 <van-icon name="share" />
+                 <view class="small-button white-color small-size">详细</view>
+             </view>
+         </view>
+     </view>
+</view>

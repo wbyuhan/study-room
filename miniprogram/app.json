@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/home/index",
+        "pages/orders/index",
+        "pages/personal/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "首页",
+        "navigationBarTextStyle": "black"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "请求获取您的位置信息"
+        }
+    },
+    "tabBar": {
+        "color": "#999999",
+        "selectedColor": "#000",
+        "borderStyle": "black",
+        "position": "bottom",
+        "list": [{
+                "pagePath": "pages/home/index",
+                "text": "首页",
+                "iconPath": "image/home/home.png",
+                "selectedIconPath": "image/home/home_select.png"
+            },
+            {
+                "pagePath": "pages/orders/index",
+                "text": "订单",
+                "iconPath": "image/home/home.png",
+                "selectedIconPath": "image/home/home_select.png"
+            },
+            {
+                "pagePath": "pages/personal/index",
+                "text": "个人中心",
+                "iconPath": "image/home/home.png",
+                "selectedIconPath": "image/home/home_select.png"
+            }
+        ]
+    },
+    "entryPagePath": "pages/home/index",
+    "sitemapLocation": "sitemap.json"
+}

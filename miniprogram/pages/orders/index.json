@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "订单",
+    "usingComponents": {
+        "van-icon": "/miniprogram_npm/@vant/weapp/icon/index",
+        "van-divider": "/miniprogram_npm/@vant/weapp/divider/index"
+    }
+}

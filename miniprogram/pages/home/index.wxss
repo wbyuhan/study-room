@@ -1,0 +1,225 @@
+/**index.wxss**/
+
+.container {
+    padding: 0;
+}
+
+.pick-color {
+    color: #999999;
+}
+
+.default-color {
+    color: #000;
+}
+
+.white-color {
+    color: #fff;
+}
+
+.default-size {
+    font-size: 14px;
+}
+
+.small-size {
+    font-size: 12px;
+}
+
+.normal-size {
+    font-size: 16px;
+}
+
+.big-size {
+    font-size: 18px;
+}
+
+.block-weight {
+    font-weight: 600;
+}
+
+.page-section {
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.margin5 {
+    margin: 5px 0;
+}
+
+.margin10 {
+    margin: 10px 0;
+}
+
+.margin15 {
+    margin: 15px 0;
+}
+
+.swiper {
+    width: calc(100% - 20px);
+    height: 170px;
+    border-radius: 5px;
+}
+
+.swiper-item,
+.introduce-image {
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+}
+
+.swiper-item-image {
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+}
+
+.chioce,
+.address,
+.room,
+.flow,
+.careful {
+    padding: 10px 10px;
+    width: calc(100% - 20px)
+}
+
+.chioce-title {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.chioce-card {
+    width: 100%;
+    display: flex;
+    height: 166px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.chioce-card-left {
+    width: calc(50% - 39px);
+    border-radius: 5px;
+    box-shadow: rgb(192, 192, 192) 0px 0px 4px;
+    padding: 15px 12px;
+}
+
+.chioce-card-right {
+    width: calc(50% - 5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chioce-card-right-child {
+    width: calc(100% - 30px);
+    height: 54px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    padding-left: 15px;
+    box-shadow: rgb(192, 192, 192) 0px 0px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    width: 102px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    margin: 15px 0;
+    background-image: linear-gradient(to right, #8888e0, #c6c6eb);
+    cursor: pointer;
+}
+
+.small-button {
+    width: 80px;
+    height: 22px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 22px;
+    background-image: linear-gradient(to right, #8888e0, #c6c6eb);
+    cursor: pointer;
+}
+
+.chioce-card-right-child-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.address-card {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 5px;
+    box-shadow: rgb(192, 192, 192) 0px 0px 2px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.button-map {
+    white-space: nowrap;
+    font-size: 14px;
+    cursor: pointer;
+    width: 70px;
+    color: #8888e0;
+}
+
+.address-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.introduce {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.introduce-des {
+    font-size: 12px;
+    color: #555555;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.flow-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(192, 192, 192) 0px 0px 2px;
+    margin: 20px 0;
+    font-size: 13px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.step {
+    margin-right: 10px;
+}
+
+.careful-card {
+    margin-top: 5px;
+    box-shadow: 0 0 2px rgb(192, 192, 192) inset;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    padding: 10px 10px;
+    margin-bottom: 50px;
+}
+
+.careful-card-item {
+    margin-bottom: 60px;
+}
+
+.boxShow {
+    box-shadow: rgb(192, 192, 192) 0px 0px 17px;
+}

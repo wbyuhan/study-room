@@ -1,0 +1,86 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="page-section swiper">
+		<swiper style="height:100%" autoplay="{{ autoplay }}" interval="{{ interval }}" duration="{{ duration }}">
+			<block wx:for="{{ background }}" wx:key="*this">
+				<swiper-item>
+					<view class="swiper-item">
+						<image class="swiper-item-image" mode="scaleToFill" src="{{ item }}"></image>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<view class="chioce">
+		<view class="chioce-title">选择座位</view>
+		<view class="chioce-card">
+			<view class="chioce-card-left">
+				<view class="default-size block-weight">双人阅读区</view>
+				<view class="small-size pick-color margin10">供两个人使用</view>
+				<view class="small-size pick-color margin10">独立私密的阅读环境</view>
+				<view class="button white-color small-size">立即预约</view>
+			</view>
+			<view class="chioce-card-right">
+				<view class="chioce-card-right-child">
+					<view class="chioce-card-right-child-top">
+						<view class="default-size block-weight">明区-单人</view>
+						<view class="small-button white-color small-size">立即预约</view>
+					</view>
+					<view class="small-size pick-color">开放的单人学习区域</view>
+				</view>
+				<view class="chioce-card-right-child">
+					<view class="chioce-card-right-child-top">
+						<view class="default-size block-weight">暗区-单人</view>
+						<view class="small-button white-color small-size">立即预约</view>
+					</view>
+					<view class="small-size pick-color">开放的单人学习区域</view>
+				</view>
+			</view>
+		</view>
+	</view>
+  <view class="address" bindtap="openMap">
+    	<view class="chioce-title">自习室地址</view>
+      <view class="address-card">
+        <van-icon name="location" color="#8888e0" />
+        <view class="address-text default-size default-color">
+          {{address}}
+        </view>
+        <view class="button-map">
+          查看地图
+        </view>
+        <van-icon name="arrow" color="#8888e0" />
+      </view>
+  </view>
+  <view class="room">
+    <view class="chioce-title">空间介绍</view>
+      <view class="introduce" wx:for="{{introduce}}" wx:key="*this">
+        <view class="introduce-image">
+          <image class="swiper-item-image boxShow" mode="scaleToFill" src="{{ item.path }}"></image>
+        </view>
+        <view class="introduce-des">
+          	{{item.des}}
+        </view>
+      </view>
+  </view>
+  <view class="flow">
+      <view class="chioce-title">空间介绍</view>
+      <view class="flow-item" wx:for="{{flowList}}" wx:key="*this">
+        <view class="step big-size">
+          {{item.step}}
+        </view> {{item.des}}
+      </view>
+  </view>
+  <view class="careful">
+    <view class="chioce-title">注意事项</view>
+    <view class="careful-card">
+      <view class="careful-card-item" wx:for="{{carefulList}}"  wx:key="*this">
+        <view class="default-size block-weight pick-color">
+          {{item.title}}
+        </view>
+        <view class="default-size pick-color">
+          {{item.des}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
